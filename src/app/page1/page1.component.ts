@@ -15,4 +15,8 @@ export class Page1Component implements OnInit {
     setTimeout(()=>{ this.pageName='First Page'},5000);
   }
 
+  onButtonClick = () => {
+    alert("hello");
+
+  }
 }
