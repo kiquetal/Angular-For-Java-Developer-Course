@@ -1,5 +1,5 @@
-<app-header></app-header>
-<app-page1></app-page1>
-<app-page2></app-page2>
-<app-page3></app-page3>
-<footer></footer>
+<app-header #headerComponent></app-header>
+<app-page1 [hidden]="headerComponent.pageRequest!==1" ></app-page1>
+<app-page2 [hidden]="headerComponent.pageRequest!==2"></app-page2>
+<app-page3 [hidden]="headerComponent.pageRequest!==3"></app-page3>
+<app-footer></app-footer>
