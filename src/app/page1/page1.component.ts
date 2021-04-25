@@ -11,6 +11,8 @@ export class Page1Component implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+    setTimeout(()=>{ this.pageName='First Page'},5000);
   }
 
 }
